@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: default
+  application:
+    name: media
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      fail-fast: true
+      profile: dev
+      uri: lb://configserver
+      enabled: true
+  devtools:
+    add-properties:
+      false
