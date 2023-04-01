@@ -8,11 +8,8 @@ spring:
       enabled: ALWAYS
   cloud:
     config:
-      discovery:
-        enabled: true
       fail-fast: true
-      profile: dev
-      uri: lb://configserver
+      uri: http://localhost:8090
       enabled: true
   devtools:
     add-properties:

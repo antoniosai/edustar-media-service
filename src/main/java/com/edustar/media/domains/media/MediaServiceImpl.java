@@ -45,7 +45,7 @@ public class MediaServiceImpl implements MediaService {
         UUID uuid = UUID.randomUUID();
 
         try {
-            Path root = Paths.get(storagePath + "/" + mediaDTO.getMedia_category());
+            Path root = Paths.get(storagePath);
 
             String extension = file.getOriginalFilename().split("\\.")[1];
 
